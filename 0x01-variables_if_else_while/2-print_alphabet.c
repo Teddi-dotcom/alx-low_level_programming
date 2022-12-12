@@ -1,32 +1,18 @@
 #include <stdio.h>
 
 /**
- *main - Entry
+ *main - Print alphabet in lowercase
  *Return: Always 0
  */
 int main(void)
 {
-	int i, j;
+	char lc;
 
-	for (i = 0; i < 100; i++)
+	for (lc = 'a'; lc <= 'z'; lc++)
 	{
-		for (j = 0; j < 100; j++)
-		{
-			if (i < j)
-			{
-				putchar((i / 10) + 48);
-				putchar((i % 10) + 48);
-			        putchar(' ');								        putchar((j / 10) + 48);
-		                putchar((j % 10) + 48);
-				if (i != 98 || j != 99)
-				{
-					putchar(',');
-		                 	putchar(' ');
-				}
-			
-			}
-		}
+		putchar(lc);
 	}
+
 	putchar('\n');
 	return (0);
 }
